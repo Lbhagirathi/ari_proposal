@@ -11,7 +11,7 @@ Fig 2: Virtual sensor-grid cascade detection and relay-path recovery.
        Detection depends on true spatial coverage; localisation error affects
        whether the estimated positions preserve the full relay path.
 
-Network centrality (P4, P5) is not calculated in this four-individual model.
+Network centrality (P3, P4) is not calculated in this four-individual model.
 A larger simulation and episode-level network analyses would be needed.
 """
 import numpy as np

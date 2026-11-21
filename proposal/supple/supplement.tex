@@ -12,7 +12,7 @@
 \end{center}
 \vspace{-6pt}
 
-Revised code (\texttt{hyena\_dyadic\_abm\_revised.py}, \texttt{hyena\_rank\_abm\_revised.py}) and figures:
+Revised code (\texttt{hyena\_dyadic\_abm.py}, \texttt{hyena\_rank\_abm.py}) and figures:
 \url{https://github.com/Lbhagirathi/ari_proposal}.
 
 %%
@@ -58,7 +58,7 @@ context specific amplification shapes:
 Context  & $g(s)$                        & Rationale \\\midrule
 Defence  & $0.2 + 0.8s$ (rising)         & Distant animals most need a relay during conflict\\
 Cohesion & $0.25 + 0.6s^4$ (uptick)      & Re establish contact at range edge\\
-Hunting  & $0.5$ (flat, exploratory)     & Included for completeness; not part of P1 to P5\\
+Hunting  & $0.5$ (flat, exploratory)     & Included for completeness; not part of P1--P4\\
 \bottomrule
 \end{tabular}
 \end{center}
@@ -152,7 +152,7 @@ $c_{ij}$ (listener $i$, caller $j$) multiplies $p_{\text{reply}}$:
 Context  & $c_{ij}$                     & Meaning\\\midrule
 Defence  & 1.0 if $i$ top, else 0.8     & Support across the clan\\
 Cohesion & 1.0 if $j$ top, else 0.3     & Strong bond with top; little care among subordinates\\
-Hunting  & 0.5 for all $i,j$            & Exploratory; not part of P1 to P5\\
+Hunting  & 0.5 for all $i,j$            & Exploratory; not part of P1--P4\\
 \bottomrule
 \end{tabular}
 \end{center}
@@ -162,10 +162,10 @@ directly from the CARE matrices used in the model. They show what these assumed
 rules produce, but they do not establish that the same rules operate in real hyena
 clans.
 
-\textbf{On network centrality (P4, P5).} The current version of Model~2 does not calculate network centrality. It includes
+\textbf{On network centrality (P3, P4).} The current version of Model~2 does not calculate network centrality. It includes
 only four individuals and is intended to explore how the assumed differences in
 response rules between ranks affect participation. It does not represent the
-structure of a vocal network across a whole clan. To test P4 and P5, I would need
+structure of a vocal network across a whole clan. To test P3 and P4, I would need
 to run a separate simulation with a larger group and analyse the networks from
 individual cascade episodes, rather than pooling all interactions into one network.
 The current simulation therefore does not test the centrality predictions.
@@ -214,9 +214,9 @@ Both models encode hypotheses as rules rather than testing them. All parameters 
 set for illustrative contrast and are not fitted to empirical data.
 
 \textbf{Group and spatial structure.}
-Four individuals in a small arena do not represent a real clan territory
-($\sim$50\,km$^2$) or a typical clan size of 20 to 80 adults. Network centrality
-predictions (P4 and P5) are not evaluated in this version of the model.
+Four individuals in a small arena do not represent a Mara clan territory
+(13--76\,km$^2$) or clan size (up to 125 individuals). Network centrality
+predictions (P3 and P4) are not evaluated in this version of the model.
 
 \textbf{Sensor model.}
 The virtual sensor checks spatial coverage and adds Gaussian error to the estimated
